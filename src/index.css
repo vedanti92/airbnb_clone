@@ -1,13 +1,90 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Varela+Round&display=swap');
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav {
+  height: 70px;
+  display: flex;
+  padding: 5px 20px;
+  background-color: lightgray;
+}
+
+.photo-grid {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  max-width: 100%;
+}
+
+section {
+  padding: 20px;
+}
+
+.maincomponent {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  margin-bottom: 0px;
+}
+
+.para {
+  margin-top: 10px;
+}
+
+.card {
+  width: 175px;
+  font-size: 12px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 50px;
+  overflow-x: auto;
+}
+
+.card--image {
+  width: 200px;
+  height: 300px;
+  border-radius: 25px;
+  margin-bottom: 9px;
+}
+
+.card--stats {
+  display: flex;
+  align-items: center;
+}
+
+.card--star {
+  width: 6%;
+}
+
+.gray {
+  color: #918E9B;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.card--badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
 }
